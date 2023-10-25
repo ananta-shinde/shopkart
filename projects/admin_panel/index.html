@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-success text-white px-4">
+        <h6>Admin Panel</h6>
+         <ul class="navbar-nav ">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" id="profile-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+                <ul class="dropdown-menu" aria-labelledby="profile-menu">
+                    <li><a class="dropdown-item">logout</a></li>
+                </ul>
+            </li>
+         </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 bg-light p-4 " style="height:100vh ;">
+                <h6>Actions</h6>
+                <ul class="list-group">
+                    <li class="list-group-item">Add Product</li>
+                    <li class="list-group-item">View Products</li>
+                </ul>
+            </div>
+            <div class="col p-4">
+                <form action="#" class="w-75 bg-light p-4">
+                    <h4 class="text-left">Add new product</h4>
+                    <input class="form-control" type="text" placeholder="name of product" id="name"/>
+                    <input class="form-control" type="text" placeholder="price of product" id="price"/>
+                    <select  class="form-control" name="" id="category">
+                        <option>-- selecte categpry --</option>
+                        <option>Electronics</option>
+                        <option>Clothing</option>
+                    </select>
+                    <button class="btn btn-success" id="save" onclick="clicked()">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
