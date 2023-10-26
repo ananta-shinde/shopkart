@@ -23,12 +23,12 @@
             <div class="col-lg-3 col-md-4 bg-light p-4 " style="height:100vh ;">
                 <h6>Actions</h6>
                 <ul class="list-group">
-                    <li class="list-group-item">Add Product</li>
-                    <li class="list-group-item">View Products</li>
+                    <li class="list-group-item" id="add-product" ><button class="btn" onclick="addNewClicked()">Add Product</button></li>
+                    <li class="list-group-item"><button class="btn" onclick="viewProductClicked ()">view product</button></li>
                 </ul>
             </div>
             <div class="col p-4">
-                <form action="#" class="w-75 bg-light p-4">
+                <form action="#" class="w-75 bg-light p-4" id="add-new-product-form">
                     <h4 class="text-left">Add new product</h4>
                     <input class="form-control" type="text" placeholder="name of product" id="name"/>
                     <input class="form-control" type="text" placeholder="price of product" id="price"/>
@@ -39,6 +39,19 @@
                     </select>
                     <button class="btn btn-success" id="save" onclick="clicked()">Save</button>
                 </form>
+
+                <table class="table" id="product-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                   
+
+                </table>
+
+                
             </div>
         </div>
     </div>
