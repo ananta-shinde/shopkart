@@ -40,6 +40,18 @@
                     <button class="btn btn-success" id="save" onclick="clicked()">Save</button>
                 </form>
 
+                <div  class="modal p-4 bg-info" id="update-product-form">
+                    <h4 class="text-left">Add new product</h4>
+                    <input class="form-control" type="text" placeholder="name of product" id="pname"/>
+                    <input class="form-control" type="text" placeholder="price of product" id="pprice"/>
+                    <select  class="form-control" name="" id="pcategory">
+                        <option>-- selecte categpry --</option>
+                        <option>Electronics</option>
+                        <option>Clothing</option>
+                    </select>
+                    <button class="btn btn-success" id="update" onclick="update()">Update</button>
+                </div>
+
                 <table class="table" id="product-table">
                     <tr>
                         <th>Name</th>
@@ -47,7 +59,7 @@
                         <th>Category</th>
                         <th>Actions</th>
                     </tr>
-                   
+
 
                 </table>
 
