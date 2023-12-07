@@ -3,7 +3,7 @@
 <head>
     <title>Admin Panel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-lg bg-success text-white px-4">
@@ -40,18 +40,19 @@
                     <button class="btn btn-success" id="save" onclick="clicked()">Save</button>
                 </form>
 
-                <div  class="modal p-4 bg-info" id="update-product-form">
-                    <h4 class="text-left">Add new product</h4>
-                    <input class="form-control" type="text" placeholder="name of product" id="pname"/>
-                    <input class="form-control" type="text" placeholder="price of product" id="pprice"/>
-                    <select  class="form-control" name="" id="pcategory">
+                <form action="#" class="w-75 bg-light p-4" id="update-product-form">
+                    <h4 class="text-left">Update Product</h4>
+                    <input class="form-control" type="text" placeholder="name of product" id="update-name"/>
+                    <input class="form-control" type="text" placeholder="price of product" id="update-price"/>
+                    <select  class="form-control" name="" id="update-category">
                         <option>-- selecte categpry --</option>
                         <option>Electronics</option>
                         <option>Clothing</option>
                     </select>
-                    <button class="btn btn-success" id="update" onclick="update()">Update</button>
-                </div>
+                    <button class="btn btn-success" id="update" onclick="updateP()">update</button>
+                </form>
 
+                 
                 <table class="table" id="product-table">
                     <tr>
                         <th>Name</th>
@@ -67,6 +68,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>

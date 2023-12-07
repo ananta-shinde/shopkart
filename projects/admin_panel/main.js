@@ -2,6 +2,8 @@
 // form is hidden by default
 var addNewForm = document.getElementById("add-new-product-form");
 addNewForm.setAttribute("hidden",true)
+var updateProduct = document.getElementById("update-product-form");
+updateProduct.setAttribute("hidden",true)
 
 var productTable = document.getElementById("product-table");
 
@@ -60,7 +62,7 @@ const createProductRow = (p) => {
   btn.innerHTML = "update"
   btn.classList ="btn btn-info";
   btn.setAttribute("id",p.id);
-  btn.addEventListener("click",updateClicked);
+  btn.addEventListener("click",updateproduct);
   td.appendChild(btn)
   tr.appendChild(td)
   productTable.appendChild(tr);
@@ -74,22 +76,46 @@ const createProductRow = (p) => {
     location.reload()
   }
 
-  const updateClicked = (e)=>{
-    var modal = document.getElementById("update-product-form");
-    var updatebtn = document.getElementById("update");
-    // updatebtn.value = e.target.id;
-    modal.style.display = "block";
+  var pid = 95 ;
+  function updateproduct(e)
+  {
+    pid = e.target.id;
+    updateProduct.removeAttribute("hidden");
+    btn = document.getElementById("update");
+    btn.setAttribute("pid",e.target.id);
+    // add product details to form
+    products = JSON.parse( localStorage.getItem("products"))
+    result = products.filter(p=>p.id == e.target.id);
+    
+    var updateName = document.getElementById("update-name");
+    var updatePrice = document.getElementById("update-price");
+    var updateCategory = document.getElementById("update-category");
+    updateName.value = result[0].name
+    updatePrice.value = result[0].price
+    updateCategory.value = result[0].category
+
+
   }
 
-  const update = ()=>{
-         console.log(e);
+  const updateP = (pid) =>{
+     
+    var updateName = document.getElementById("update-name");
+    var updatePrice = document.getElementById("update-price");
+    var updateCategory = document.getElementById("update-category");
+    products = JSON.parse( localStorage.getItem("products"))
+    for(i=0;i<products.length;i++)
+    {
+      if(products[i].id == pid){
+        products[i].name = updateName.value;
+        products[i].price = updatePrice.value;
+        products[i].category = updateCategory.value;
+      }
+    }
+    localStorage.setItem("products",JSON.stringify(products))
+    updateProduct.setAttribute("hidden",true)
+    location.reload()
   }
-
-
-
-  
-
-
+   
 // adding data row to table
  
 
