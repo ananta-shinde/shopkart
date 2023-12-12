@@ -1,0 +1,16 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 60%;
+    padding: 5%;
+}
+
+.login-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

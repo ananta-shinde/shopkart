@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "name": "shoe for men 1",
+      "categoryId": 1,
+      "id": 2
+    },
+    {
+      "name": "shoe for men 2",
+      "categoryId": 1,
+      "id": 3
+    },
+    {
+      "name": "shoe for women 2",
+      "categoryId": 2,
+      "id": 4
+    },
+    {
+      "name": "shoe for women 1",
+      "categoryId": 2,
+      "id": 5
+    },
+    {
+      "name": "shoe for kids 1",
+      "categoryId": 3,
+      "id": 6
+    },
+    {
+      "name": "shoe for kids 2",
+      "categoryId": 3,
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "Ananta",
+      "email": "example@demo.com",
+      "password": "1234566",
+      "id": 1
+    },
+    {
+      "name": "Ananta",
+      "email": "ananta@mail.com",
+      "password": "123456",
+      "id": 3
+    }
+  ],
+  "brands": [],
+  "categories": [
+    {
+      "name": "men",
+      "id": 1
+    },
+    {
+      "name": "women",
+      "id": 2
+    },
+    {
+      "name": "kids",
+      "id": 3
+    }
+  ],
+  "carts": [
+    {
+      "userId": 1,
+      "id": 2
+    }
+  ]
+}
