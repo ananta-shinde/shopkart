@@ -1,19 +1,17 @@
 import { useEffect } from "react";
 
-const AppDataTable = (props) => {
-    
-    
+const AppDataTable = (props) => { 
     return ( 
         <>
           {
             props.data &&<table className="table">
+              {/* creating headers */}
             <tr>
-              {/* {keys.map(k=>(<th>{k}</th>))} */}
+              {Object.keys(props.data[0]).map(k=>(<th>{k}</th>))}
             </tr>
-            {props.data.map(u=>( <tr>
-              <td>{u.id}</td>
-              <td>{u.name}</td>
-              <td>{u.email}</td>
+            {/* creating data rows */}
+            {props.data.map(d=>( <tr>
+              {Object.keys(props.data[0]).map(k =>(<td>{d[k]}</td>) )}
             </tr>))}
         </table>
           } 
