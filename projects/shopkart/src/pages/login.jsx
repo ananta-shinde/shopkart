@@ -30,7 +30,8 @@ const Login = () => {
         fetch(`http://localhost:5000/users?email=${email}`,{
             "method": "get",    
         })
-        .then(res => res.json())
+        .then(res => {
+            console.log(res.json())})
         .then(users => {
             console.log(users)
             if(users.length == 0)

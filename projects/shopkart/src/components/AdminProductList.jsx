@@ -21,9 +21,13 @@ const AdminProductList = () => {
            getproducts();
     },[]);
     return (<>
-         <button className="btn btn-success" onClick={handleClick}>Add New Product</button>
-        {isFormActive && <AddProductForm/>}
-        {!isFormActive && <AppDataTable data={products}/>}
+         
+        {isFormActive && <AddProductForm deactivateForm={setFormctive}/>}
+        {!isFormActive && <>
+        <AppDataTable data={products}/>
+        <button className="btn btn-success" onClick={handleClick}>Add New Product</button>
+        </>
+        }
     </>  );
 }
  
