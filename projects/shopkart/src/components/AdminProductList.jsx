@@ -20,8 +20,7 @@ const AdminProductList = () => {
     useEffect(()=>{
            getproducts();
     },[]);
-    return (<>
-         
+    return (<> 
         {isFormActive && <AddProductForm deactivateForm={setFormctive}/>}
         {!isFormActive && <>
         <AppDataTable data={products}/>

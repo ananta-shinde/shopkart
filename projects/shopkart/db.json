@@ -1,78 +1,47 @@
 {
-  "products": [
-    {
-      "name": "shoe for men 1",
-      "categoryId": 1,
-      "id": 2
-    },
-    {
-      "name": "shoe for men 2",
-      "categoryId": 1,
-      "id": 3
-    },
-    {
-      "name": "shoe for women 2",
-      "categoryId": 2,
-      "id": 4
-    },
-    {
-      "name": "shoe for women 1",
-      "categoryId": 2,
-      "id": 5
-    },
-    {
-      "name": "shoe for kids 1",
-      "categoryId": 3,
-      "id": 6
-    },
-    {
-      "name": "shoe for kids 2",
-      "categoryId": 3,
-      "id": 7
-    },
-    {
-      "name": "laptop",
-      "price": "500000",
-      "category": "Electronics",
-      "id": 8
-    },
-    {
-      "id": 9
-    }
-  ],
   "users": [
     {
       "name": "Ananta",
-      "email": "example@demo.com",
-      "password": "1234566",
+      "email": "admin@demo.com",
+      "password": "123456",
       "id": 1
     },
     {
-      "name": "Ananta",
-      "email": "ananta@mail.com",
+      "name": "Shardul",
+      "email": "shardul@demo.com",
       "password": "123456",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Shoe for men 1",
+      "categoryId": 1,
+      "id": 1
+    },
+    {
+      "name": "Shoe for women 1",
+      "categoryId": 2,
+      "id": 2
+    },
+    {
+      "name": "Running shoe for men",
+      "price": "2000",
+      "categoryId": "1",
       "id": 3
     }
   ],
-  "brands": [],
+  "carts": [],
+  "orders": [],
   "categories": [
     {
-      "name": "men",
+      "name": "Men",
       "id": 1
     },
     {
-      "name": "women",
+      "name": "Women",
       "id": 2
-    },
-    {
-      "name": "kids",
-      "id": 3
     }
   ],
-  "carts": [
-    {
-      "userId": 1,
-      "id": 2
-    }
-  ]
+  "brands":[]
 }

@@ -4,7 +4,8 @@ import AdminSideNavbar from "./AdminSideNavbar";
 import AppDataTable from "./AppDataTable";
 import AdminProductList from "./AdminProductList";
 import AdminUsersList from "./AdminUsersList";
-
+import AdminBrandList from "./AdminBrandList";
+import AdminCategoryList from "./AdminCategoryList"
 const AdminDashboard = (props) => {
     const [activeMenu, setActiveMenu] = useState("products");
     return ( <>
@@ -16,6 +17,8 @@ const AdminDashboard = (props) => {
          <div className="col">
               {(activeMenu == "products") && <AdminProductList/>}
               {(activeMenu == "users") && <AdminUsersList/>}
+              {(activeMenu == "categories") && <AdminCategoryList/>}
+              {(activeMenu == "users") && <AdminBrandList/>}
          </div>
        </div>  
     </> );

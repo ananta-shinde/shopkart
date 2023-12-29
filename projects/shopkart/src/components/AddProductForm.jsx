@@ -1,7 +1,7 @@
 const AddProductForm = (props) => {
     let name;
     let price;
-    let category;
+    let categoryId;
     const handleChange = (e) =>{
           if(e.target.name == "name")
           {
@@ -11,9 +11,9 @@ const AddProductForm = (props) => {
           {
               price = e.target.value
           }
-          if(e.target.name == "category")
+          if(e.target.name == "categoryId")
           {
-              category = e.target.value
+              categoryId = e.target.value
           }
     }
 
@@ -21,7 +21,7 @@ const AddProductForm = (props) => {
             e.preventDefault()
             fetch("http://localhost:5000/products",{
                 method:"post",
-                body : JSON.stringify({name,price,category}),
+                body : JSON.stringify({name,price,categoryId}),
                 headers :{
                     'Content-Type': 'application/json',
                 }
@@ -42,8 +42,11 @@ const AddProductForm = (props) => {
                 onChange={handleChange}/>
             </div>
             <div className="form-group">
-                <input type="text" className="form-control" placeholder="category of product" name="category"
-               onChange={handleChange}/>
+                <select className="form-control" name="categoryId" onChange={handleChange} >
+                    <option value="0">-- select product category --</option>
+                    <option value="1">Men</option>
+                    <option value="2">Women</option>
+                </select>    
             </div>
             <button className="btn btn-success" onClick={handleClick}>Save Product</button>
         </form>
