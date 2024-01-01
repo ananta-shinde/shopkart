@@ -5,7 +5,8 @@ import Home from './pages/home';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import Profile from './pages/profile';
-import AdminDashboard from './components/AdminDashboard';
+import Admin from './pages/admin';
+ 
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
           <Route path='/' element={ <Home/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>}/>
-          <Route path='/profile' element={<Profile/>}/>
-          <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
+          <Route path='/profile' element={<Profile/>}/>    
+          <Route path='/admin' element={<Admin/>}/>    
       </Routes>
      </BrowserRouter>
   );

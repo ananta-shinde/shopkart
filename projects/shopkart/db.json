@@ -1,47 +1,8 @@
 {
-  "users": [
-    {
-      "name": "Ananta",
-      "email": "admin@demo.com",
-      "password": "123456",
-      "id": 1
-    },
-    {
-      "name": "Shardul",
-      "email": "shardul@demo.com",
-      "password": "123456",
-      "id": 2
-    }
-  ],
-  "products": [
-    {
-      "name": "Shoe for men 1",
-      "categoryId": 1,
-      "id": 1
-    },
-    {
-      "name": "Shoe for women 1",
-      "categoryId": 2,
-      "id": 2
-    },
-    {
-      "name": "Running shoe for men",
-      "price": "2000",
-      "categoryId": "1",
-      "id": 3
-    }
-  ],
+  "users": [],
+  "products": [],
   "carts": [],
   "orders": [],
-  "categories": [
-    {
-      "name": "Men",
-      "id": 1
-    },
-    {
-      "name": "Women",
-      "id": 2
-    }
-  ],
+  "categories": [],
   "brands":[]
 }
