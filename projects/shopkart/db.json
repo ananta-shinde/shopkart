@@ -1,8 +1,24 @@
 {
   "users": [],
-  "products": [],
+  "products": [{
+    "id":1,
+    "name":"demo1",
+    "price":5000
+  }],
   "carts": [],
   "orders": [],
-  "categories": [],
-  "brands":[]
+  "categories": [{
+    "id":1,
+    "name":"Men"
+  },
+  {
+    "id":2,
+    "name":"Women"
+  }],
+  "brands":[
+    {
+      "id":1,
+      "name":"Apple"
+    }
+  ]
 }
