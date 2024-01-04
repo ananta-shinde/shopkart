@@ -1,24 +1,48 @@
 {
   "users": [],
-  "products": [{
-    "id":1,
-    "name":"demo1",
-    "price":5000
-  }],
+  "products": [
+    {
+      "name": "laptop",
+      "price": "2000",
+      "categoryId": "2",
+      "brandId": "1",
+      "image_url": "http://localhost:5000/products",
+      "id": 4
+    },
+    {
+      "name": "laptop",
+      "price": "2000",
+      "categoryId": "1",
+      "brandId": "1",
+      "image_url": "http://localhost:5000/products",
+      "id": 5
+    }
+  ],
   "carts": [],
   "orders": [],
-  "categories": [{
-    "id":1,
-    "name":"Men"
-  },
-  {
-    "id":2,
-    "name":"Women"
-  }],
-  "brands":[
+  "categories": [
     {
-      "id":1,
-      "name":"Apple"
+      "id": 1,
+      "name": "Men"
+    },
+    {
+      "id": 2,
+      "name": "Women"
+    },
+    {
+      "name": "Summer Collection",
+      "id": 3
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Apple"
+    },
+    {
+      "name": "Redmi",
+      "image_url": "http://localhost:5000/products",
+      "id": 2
     }
   ]
 }
