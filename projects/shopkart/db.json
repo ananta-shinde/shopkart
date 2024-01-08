@@ -2,19 +2,35 @@
   "users": [],
   "products": [
     {
-      "name": "laptop",
-      "price": "2000",
+      "name": "Dell Inspiron 3535 Laptop",
+      "price": "47990",
       "categoryId": "2",
+      "brandId": "3",
+      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/613CPDo6D4L._SX679_.jpg",
+      "id": 2
+    },
+    {
+      "name": "OnePlus Nord CE 3 Lite 5G",
+      "price": "20000",
+      "categoryId": "1",
       "brandId": "1",
-      "image_url": "http://localhost:5000/products",
+      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61LB+d0vheL._SX679_.jpg",
+      "id": 3
+    },
+    {
+      "name": "Xiaomi Pad 6",
+      "price": "45000",
+      "categoryId": "3",
+      "brandId": "4",
+      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71LRY1j6UHL._SX679_.jpg",
       "id": 4
     },
     {
-      "name": "laptop",
-      "price": "2000",
-      "categoryId": "1",
-      "brandId": "1",
-      "image_url": "http://localhost:5000/products",
+      "name": "Apple 2022 11-inch iPad Pro",
+      "price": "150000",
+      "categoryId": "3",
+      "brandId": "2",
+      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71zMz9YT0qL._SX679_.jpg",
       "id": 5
     }
   ],
@@ -22,27 +38,36 @@
   "orders": [],
   "categories": [
     {
-      "id": 1,
-      "name": "Men"
+      "name": "Mobile",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Women"
+      "name": "Laptops",
+      "id": 2
     },
     {
-      "name": "Summer Collection",
+      "name": "Tabs",
       "id": 3
     }
   ],
   "brands": [
     {
-      "id": 1,
-      "name": "Apple"
+      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/S/stores-image-uploads-eu-prod/7/AmazonStores/A21TJRUUN4KGV/4f4c9bd052319547ad5ee5b10042bab4.w3000.h600._CR0%2C0%2C3000%2C600_SX1920_.jpg",
+      "name": "OnePlus",
+      "id": 1
+    },
+    {
+      "name": "Apple",
+      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/S/stores-image-uploads-eu-prod/3/AmazonStores/A21TJRUUN4KGV/18d49e2262156c1e6dd9bbf413685add.w3000.h600._CR0%2C0%2C3000%2C600_SX1920_.jpg",
+      "id": 2
+    },
+    {
+      "name": "Dell",
+      "id": 3
     },
     {
       "name": "Redmi",
-      "image_url": "http://localhost:5000/products",
-      "id": 2
+      "id": 4
     }
   ]
 }

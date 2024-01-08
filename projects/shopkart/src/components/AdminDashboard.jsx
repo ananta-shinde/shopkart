@@ -3,6 +3,8 @@ import AddProductForm from "./AddProductForm";
 import ProductList from "./ProductList";
 import AddCategoryForm from "./AddCategoryForm";
 import AddBrandForm from "./AddBrandForm";
+import CategoryList from "./CategoryList";
+import BrandList from "./BrandList";
 
 const AdminDashboard = () => {
     const [activeMenu,setActiveMenu] = useState("product-list");
@@ -30,13 +32,9 @@ const AdminDashboard = () => {
                     {activeMenu == "product-list" && <ProductList/>}
                     {activeMenu == "add-category" && <AddCategoryForm/>}
                     {activeMenu == "add-brand" && <AddBrandForm/>}
-                    {/* add product form */}
-                    {/* product list */}
-                    {/* orders list */}
-                     {/* add catgory form */}
-                    {/* category list */}
-                     {/* add brand form */}
-                    {/* brand list */}
+                    {activeMenu == "category-list" && <CategoryList/>}
+                    {activeMenu == "brand-list" && <BrandList/>}
+                    
                 </div>
             </div>
          </div>
