@@ -1,5 +1,18 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "Ananta Shinde",
+      "email": "admin@example.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Shardul",
+      "email": "me@exmaple.com",
+      "password": "123456",
+      "id": 2
+    }
+  ],
   "products": [
     {
       "name": "Dell Inspiron 3535 Laptop",

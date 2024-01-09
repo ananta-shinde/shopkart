@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './login.css'
 import { redirect, useNavigate } from 'react-router-dom';
-const Login = () => {
+const Login = (props) => {
 
      //1. accept inputs from user ( email & password)
      //1.a create UI structure
@@ -14,7 +14,7 @@ const Login = () => {
     const [email, setEmail]  = useState();
     const [password, setPassword]  = useState();
     const [message,setMessage] = useState();
-     
+    
 
     const handlechange = (e) =>{
         if(e.target.name == "email")
@@ -28,10 +28,9 @@ const Login = () => {
    const handleSubmit =  (e) =>{
          e.preventDefault()
         fetch(`http://localhost:5000/users?email=${email}`,{
-            "method": "get",    
+            method: "get",    
         })
-        .then(res => {
-            console.log(res.json())})
+        .then(res => res.json())
         .then(users => {
             console.log(users)
             if(users.length == 0)
@@ -42,8 +41,9 @@ const Login = () => {
                  const user = users[0];
                  if(user.password == password)
                  {
-                    navigate("/profile");
-                    setMessage()
+                    setMessage("")
+                    props.setUser(user);
+                    navigate("/");
                  }
                  else{
                     setMessage("Invalid creds");
@@ -52,6 +52,14 @@ const Login = () => {
             }
         })
    }
+
+   useEffect(()=>{
+       
+       if( props.isLoggedIn)
+       {
+          navigate("/");
+       }
+   },[])
 
     return ( 
     <div className='login-form-container'>
