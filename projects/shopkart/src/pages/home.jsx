@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useEffect } from "react";
 import ProductCard from "../components/ProductCard";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import {userContext} from "../context"
 
 const Home = (props) => {
     const [products,setProduct] = useState([]);
     const [categoryFilter,setCategoryFilter] = useState(0);
     const navigate =  useNavigate();
+    const user = useContext(userContext);
     useEffect(()=>{
         let url = `http://localhost:5000/products?categoryId=${categoryFilter}`
         if(categoryFilter == 0)
@@ -32,8 +34,9 @@ const Home = (props) => {
     }
     return ( <>
     <div className="container">
-        <p>Welcome {props.user.name}</p>
+        <p>Welcome {user.name}</p>
         <button className="btn btn-danger" onClick={logout}>Logout</button>
+        <Link to="/cart" className="btn btn-info">View Cart</Link>
         <ul className="list-unstyled d-flex justify-content-around p-4">
             <li onClick={handleCategoryFilter} id="mobiles" value={0}>All</li>
             <li onClick={handleCategoryFilter} id="mobiles" value={1}>Mobiles</li>
@@ -42,7 +45,7 @@ const Home = (props) => {
         </ul>
         <div className="d-flex">
             {
-            products.map(p=>(<ProductCard product={p}/>))
+            products.map(p=>(<ProductCard product={p} setCart={props.setCart} cart={props.cart}/>))
         }
         </div>
     </div>

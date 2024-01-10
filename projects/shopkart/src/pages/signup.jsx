@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import './login.css'
 const Signup = () => {
    let name;
    let email;
    let password;
+   const navigate = useNavigate();
     const handlechage = (e) =>{
         if(e.target.name == "name")
         name = e.target.value
@@ -24,6 +26,8 @@ const Signup = () => {
             },
             "body":JSON.stringify({name,email,password})
         });
+
+        navigate("/login");
     }
 
 
