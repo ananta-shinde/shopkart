@@ -43,6 +43,7 @@ const Login = (props) => {
                  {
                     setMessage("")
                     props.setUser(user);
+                    props.setLoggedIn(true);
                     navigate("/");
                  }
                  else{
@@ -54,7 +55,6 @@ const Login = (props) => {
    }
 
    useEffect(()=>{
-       
        if( props.isLoggedIn)
        {
           navigate("/");

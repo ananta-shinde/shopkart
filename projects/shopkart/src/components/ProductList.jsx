@@ -28,7 +28,7 @@ const ProductList = () => {
               }
           </tr>
           {
-             products.map(p=>( <tr>
+             products.map(p =>( <tr>
                   { keys.map(k=>(<td>{p[k]}</td>))}
               </tr>))
           }

@@ -19,7 +19,7 @@ function App() {
     <userContext.Provider value={user}>
      <BrowserRouter>
       <Routes>
-          <Route path='/' element={ <Home setLoggedIn ={setLoggedIn} setUser={setUser} setCart={setCart} cart={cart}/>}/>
+          <Route path='/' element={ <Home setLoggedIn ={setLoggedIn} setUser={setUser} setCart={setCart}  cart={cart}/>}/>
           <Route path='/login' element={<Login isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} setUser={setUser} />}/>
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/profile' element={<Profile/>}/>    
