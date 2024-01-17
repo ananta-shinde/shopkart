@@ -16,7 +16,7 @@
   "products": [
     {
       "name": "Dell Inspiron 3535 Laptop",
-      "price": "47990",
+      "price": 47990,
       "categoryId": "2",
       "brandId": "3",
       "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/613CPDo6D4L._SX679_.jpg",
@@ -24,7 +24,7 @@
     },
     {
       "name": "OnePlus Nord CE 3 Lite 5G",
-      "price": "20000",
+      "price": 20000,
       "categoryId": "1",
       "brandId": "1",
       "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61LB+d0vheL._SX679_.jpg",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Xiaomi Pad 6",
-      "price": "45000",
+      "price": 45000,
       "categoryId": "3",
       "brandId": "4",
       "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71LRY1j6UHL._SX679_.jpg",
@@ -40,7 +40,7 @@
     },
     {
       "name": "Apple 2022 11-inch iPad Pro",
-      "price": "150000",
+      "price": 150000,
       "categoryId": "3",
       "brandId": "2",
       "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71zMz9YT0qL._SX679_.jpg",
